@@ -114,9 +114,12 @@ namespace Microsoft.Xna.Framework.Content
                 var hModelReader = new ModelReader();
                 var hInt32Reader = new Int32Reader();
 
+                //mbg 23-nov-2017 - uhhh when adding hVideoReader, this was needed?
+                var hSingleReader = new SingleReader();
+
                 // At the moment the Video class doesn't exist
                 // on all platforms... Allow it to compile anyway.
-#if ANDROID || (IOS && !TVOS) || MONOMAC || (WINDOWS && !OPENGL) || (WINRT && !WINDOWS_PHONE)
+#if ANDROID || (IOS && !TVOS) || MONOMAC || (WINDOWS && !OPENGL) || (WINRT && !WINDOWS_PHONE) || SWITCH
                 var hVideoReader = new VideoReader();
 #endif
             }

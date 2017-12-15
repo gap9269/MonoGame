@@ -35,7 +35,8 @@ namespace Microsoft.Xna.Framework.Content
                 Width = width,
                 Height = height,
                 FramesPerSecond = framesPerSecond,
-                VideoSoundtrackType = (VideoSoundtrackType)soundTrackType
+                VideoSoundtrackType = (VideoSoundtrackType)soundTrackType,
+                GraphicsDevice = input.GraphicsDevice
             };
         }
     }

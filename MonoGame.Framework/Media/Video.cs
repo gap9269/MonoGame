@@ -14,6 +14,8 @@ namespace Microsoft.Xna.Framework.Media
 	{
 		private bool _disposed;
 
+        internal Microsoft.Xna.Framework.Graphics.GraphicsDevice GraphicsDevice;
+
 		#region Public API
 
 		/// <summary>
