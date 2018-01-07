@@ -119,7 +119,7 @@ namespace Microsoft.Xna.Framework.Graphics
 
 			if (_sortMode != SpriteSortMode.Immediate)
 				Setup();
-            
+
             _batcher.DrawBatch(_sortMode, _effect);
         }
 		
